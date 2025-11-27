@@ -1,91 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Navbar Fix</title>
 
-        <!-- ✅ Tailwind + DaisyUI CDN -->
-        <link
-            href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
-            rel="stylesheet" />
-        <script src="https://cdn.tailwindcss.com"></script>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSPE NCAT LAB</title>
+
+    <!-- Tailwind + DaisyUI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
 <body>
-    
-<nav class="bg-red-500 text-white shadow-sm">
-            <div class="navbar">
 
-                <!-- LEFT -->
-                <div class="navbar-start">
-                    <div class="dropdown">
-                        <div tabindex="0" role="button"
-                            class="btn btn-ghost lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg"
-                                class="h-5 w-5" fill="none"
-                                viewBox="0 0 24 24" stroke="currentColor">
+    <nav class="bg-rose-900 text-white shadow-sm">
+        <div class="navbar">
+
+            <!-- LEFT -->
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round"
                                     stroke-linejoin="round" stroke-width="2"
                                     d="M4 6h16M4 12h8m-8 6h16" />
                             </svg>
-                        </div>
-
-                        <!-- MOBILE MENU -->
-                        <ul tabindex="0"
-                            class="menu menu-sm dropdown-content bg-red-500 text-white rounded-box z-10 mt-3 w-52 p-2 shadow">
-                            <li><a href="./index.html">Home</a></li>
-                            <li>
-                                <a>Research</a>
-                                <ul class="p-2 bg-red-500 text-white">
-                                    <li><a href="research.html">AI-based Medical Imaging</a></li>
-                                    <li><a href="./research2.html">Clinical Ultrasound Imaging</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="team.html">Team</a></li>
-                            <li>
-                                <a>Publication</a>
-                                <ul class="bg-red-500 text-white">
-                                    <li><a href="./publication1.html"></a>Journal</a></li>
-                                    <li><a href="./conference.html"></a>Conference</a></li>
-                                    <li><a href="./patent.html"></a>Patent</a></li>
-                                    <li><a href="./domestic.html"></a>Domestic</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="./news.html">News</a></li>
-                            <li><a href="./class.html">Class</a></li>
-                            <li><a href="./photos.html">Photos</a></li>
-                        </ul>
                     </div>
 
-                    <a class="btn btn-ghost text-xl">AMI LAB</a>
-                </div>
-
-                <!-- CENTER (DESKTOP) -->
-                <div class="navbar-center hidden lg:flex">
-                    <ul class="menu menu-horizontal px-1">
+                    <!-- MOBILE MENU -->
+                    <ul tabindex="0" class="menu menu-sm dropdown-content bg-rose-900 text-white rounded-box z-10 mt-3 w-52 p-2 shadow">
                         <li><a href="./index.html">Home</a></li>
-
                         <li>
-                            <details>
-                                <summary>Research</summary>
-                                <ul class="p-2 bg-red-500 text-white rounded-box">
-                                    <li><a href="research.html">AI-based Medical Imaging</a></li>
-                                    <li><a href="./research2.html">Clinical Ultrasound Imaging</a></li>
-                                </ul>
-                            </details>
+                            <a>Research</a>
+                            <ul class="p-2 bg-rose-600 text-white">
+                                <li><a href="research.html">AI-based Medical Imaging</a></li>
+                                <li><a href="./research2.html">Clinical Ultrasound Imaging</a></li>
+                            </ul>
                         </li>
-
-                        <li><a href="./team.html">Team</a></li>
+                        <li><a href="team.html">Team</a></li>
                         <li>
-                            <details>
-                                <summary>Publication</summary>
-                                <ul class=" bg-red-500 text-white rounded-box">
-                                    <li><a href="./publication1.html">Journal</a></li>
-                                    <li><a href="./conference.html">Conference</a></li>
-                                    <li><a href="./patent.html">Patent</a></li>
-                                    <li><a href="./domestic.html">Domestic</a></li>
-                                </ul>
-                            </details>
+                            <a>Publication</a>
+                            <ul class="bg-rose-600 text-white">
+                                <li>
+                                    <a href="./journal.html"></a>Journal</a>
+                                </li>
+                                <li>
+                                    <a href="./conference.html"></a>Conference</a>
+                                </li>
+                                <li>
+                                    <a href="./patent.html"></a>Patent</a>
+                                </li>
+                                <li>
+                                    <a href="./domestic.html"></a>Domestic</a>
+                                </li>
+                            </ul>
                         </li>
                         <li><a href="./news.html">News</a></li>
                         <li><a href="./class.html">Class</a></li>
@@ -93,157 +61,192 @@
                     </ul>
                 </div>
 
-                <!-- RIGHT -->
-                <div class="navbar-end">
+                <a class="btn btn-ghost text-xl">MSPE LAB</a>
+            </div>
 
-                </div>
+            <!-- CENTER (DESKTOP) -->
+            <div class="navbar-center hidden lg:flex">
+                <ul class="font-medium menu menu-horizontal px-1">
+                    <li><a href="./index.html">Home</a></li>
+
+                    <li>
+                        <details>
+                            <summary>Research</summary>
+                            <ul class="p-2 bg-rose-600 text-white rounded-box">
+                                <li><a href="research.html">Artificial Intelligence</a></li>
+                                <li><a href="./research2.html">Chemistry and Material Science</a></li>
+                            </ul>
+                        </details>
+                    </li>
+
+                    <li><a href="./team.html">Team</a></li>
+                    <li>
+                        <details>
+                            <summary>Publication</summary>
+                            <ul class=" bg-rose-600 text-white rounded-box">
+                                <li><a href="./journal.html">Journal</a></li>
+                                <li><a href="./conference.html">Conference</a></li>
+                                <li><a href="./patent.html">Patent</a></li>
+                                <li><a href="./domestic.html">Domestic</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li><a href="./news.html">News</a></li>
+                    <li><a href="./class.html">Class</a></li>
+                    <li><a href="./photos.html">Photos</a></li>
+                </ul>
+            </div>
+
+            <!-- RIGHT -->
+            <div class="navbar-end">
 
             </div>
-        </nav>
 
-<section class="bg-white py-16 px-6 md:px-12 lg:px-24">
-  <div class="max-w-4xl mx-auto space-y-12">
+        </div>
+    </nav>
 
-    <!-- Title / Header -->
-    <div class="text-center">
-      <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Airway Extraction from Chest CT Using Deep Learning</h1>
-      <p class="text-gray-600">Guided map generation for bronchoscopy, fine airway detection, Encoder-Guided Attention U-Net based model development</p>
-    </div>
+    <section class="bg-white py-16 px-6 md:px-12 lg:px-24">
+        <div class="max-w-4xl mx-auto space-y-12">
 
-    <!-- Section 1: Bronchial / Airway Segmentation -->
-    <div class="space-y-6">
-      <p class="text-gray-700 leading-relaxed">
-        Minimally invasive procedures like thoracoscopy can be used for tissue biopsy, but these increase patient burden and may lead to poor outcomes. As an alternative, bronchoscopy can be used to non-invasively obtain tissue. To navigate to the target lesion, a guided map of the airway is needed.
-      </p>
-      <p class="text-gray-700 leading-relaxed">
-        Traditional pixel-based airway segmentation methods have high false detection rates and cannot detect fine airways. Deep learning-based methods have been proposed but are limited in detecting fine airways, and labeled training data is often incomplete.
-      </p>
-      <p class="text-gray-700 leading-relaxed">
-        To enhance model sensitivity, we propose the <strong>Encoder-Guided Attention U-Net</strong>. This model can detect deep and fine airways even with incomplete labels, achieving top performance in ATM’22 Challenge Long-term Validation Phase for Tree Detected Ratio (TDR) and Branch Detected Ratio (BDR).
-      </p>
-      <p class="text-gray-700 leading-relaxed">
-        This research is conducted in collaboration with the Department of Pulmonology at Pusan National University Hospital to guide peripheral lesions for successful early lung cancer biopsies.
-      </p>
-    </div>
+            <!-- Title / Header -->
+            <div class="text-center">
+                <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Airway Extraction from Chest CT Using Deep Learning</h1>
+                <p class="text-gray-600">Guided map generation for bronchoscopy, fine airway detection, Encoder-Guided Attention U-Net based model development</p>
+            </div>
 
-    <!-- Section 2: PET-CT Automatic Lung Cancer Detection -->
-    <div class="space-y-6">
-      <h2 class="text-2xl font-semibold text-gray-900">Automatic Lung Cancer Detection from PET-CT Images Using Deep Learning</h2>
-      <p class="text-gray-700 leading-relaxed">
-        Lung cancer has high incidence and mortality, and early diagnosis is crucial. CT scans may not clearly show lesions, so PET-CT is used for comprehensive diagnosis.
-      </p>
-      <p class="text-gray-700 leading-relaxed">
-        PET highlights areas of high metabolism, which may indicate tumors, but interpretation requires expert knowledge and is time-consuming. Human interpretation also varies between radiologists.
-      </p>
-      <p class="text-gray-700 leading-relaxed">
-        To address this, we propose a deep learning model based on U-Net to automatically detect tumors from PET-CT images. This includes image registration, mask preprocessing, PET-CT matching, and post-processing for improved sensitivity.
-      </p>
-    </div>
+            <!-- Section 1: Bronchial / Airway Segmentation -->
+            <div class="space-y-6">
+                <p class="text-gray-700 leading-relaxed">
+                    Minimally invasive procedures like thoracoscopy can be used for tissue biopsy, but these increase patient burden and may lead to poor outcomes. As an alternative, bronchoscopy can be used to non-invasively obtain tissue. To navigate to the target lesion,
+                    a guided map of the airway is needed.
+                </p>
+                <p class="text-gray-700 leading-relaxed">
+                    Traditional pixel-based airway segmentation methods have high false detection rates and cannot detect fine airways. Deep learning-based methods have been proposed but are limited in detecting fine airways, and labeled training data is often incomplete.
+                </p>
+                <p class="text-gray-700 leading-relaxed">
+                    To enhance model sensitivity, we propose the <strong>Encoder-Guided Attention U-Net</strong>. This model can detect deep and fine airways even with incomplete labels, achieving top performance in ATM’22 Challenge Long-term Validation
+                    Phase for Tree Detected Ratio (TDR) and Branch Detected Ratio (BDR).
+                </p>
+                <p class="text-gray-700 leading-relaxed">
+                    This research is conducted in collaboration with the Department of Pulmonology at Pusan National University Hospital to guide peripheral lesions for successful early lung cancer biopsies.
+                </p>
+            </div>
 
-    <!-- Section 3: Pathology Image Compression -->
-    <div class="space-y-6">
-      <h2 class="text-2xl font-semibold text-gray-900">Deep Learning-Based Pathology Image Compression</h2>
-      <p class="text-gray-700 leading-relaxed">
-        Pathology slides are increasingly digitized for easier management. High-resolution digital slides require large storage capacity, often in gigabytes per slide.
-      </p>
-      <p class="text-gray-700 leading-relaxed">
-        Efficient compression is needed to reduce storage costs and speed up data transmission and access. This research applies deep learning techniques to compress pathology images while minimizing quality loss and creating standardized datasets for AI-based diagnosis and disease prediction.
-      </p>
-      <p class="text-gray-700 leading-relaxed">
-        This project is supported by Seegene Medical Foundation.
-      </p>
-    </div>
+            <!-- Section 2: PET-CT Automatic Lung Cancer Detection -->
+            <div class="space-y-6">
+                <h2 class="text-2xl font-semibold text-gray-900">Automatic Lung Cancer Detection from PET-CT Images Using Deep Learning</h2>
+                <p class="text-gray-700 leading-relaxed">
+                    Lung cancer has high incidence and mortality, and early diagnosis is crucial. CT scans may not clearly show lesions, so PET-CT is used for comprehensive diagnosis.
+                </p>
+                <p class="text-gray-700 leading-relaxed">
+                    PET highlights areas of high metabolism, which may indicate tumors, but interpretation requires expert knowledge and is time-consuming. Human interpretation also varies between radiologists.
+                </p>
+                <p class="text-gray-700 leading-relaxed">
+                    To address this, we propose a deep learning model based on U-Net to automatically detect tumors from PET-CT images. This includes image registration, mask preprocessing, PET-CT matching, and post-processing for improved sensitivity.
+                </p>
+            </div>
 
-    <!-- Section 4: Larynx / Vocal Cord Position Prediction -->
-    <div class="space-y-6">
-      <h2 class="text-2xl font-semibold text-gray-900">Object Detection Algorithm for Vocal Cord Position Prediction</h2>
-      <p class="text-gray-700 leading-relaxed">
-        The vocal cords are often difficult to see directly due to surrounding structures. This study develops an algorithm to predict vocal cord positions to assist diagnosis even when not visually visible.
-      </p>
-      <p class="text-gray-700 leading-relaxed">
-        The research is conducted in collaboration with Pusan National University Hospital and Dongguk University Ilsan Hospital.
-      </p>
-    </div>
+            <!-- Section 3: Pathology Image Compression -->
+            <div class="space-y-6">
+                <h2 class="text-2xl font-semibold text-gray-900">Deep Learning-Based Pathology Image Compression</h2>
+                <p class="text-gray-700 leading-relaxed">
+                    Pathology slides are increasingly digitized for easier management. High-resolution digital slides require large storage capacity, often in gigabytes per slide.
+                </p>
+                <p class="text-gray-700 leading-relaxed">
+                    Efficient compression is needed to reduce storage costs and speed up data transmission and access. This research applies deep learning techniques to compress pathology images while minimizing quality loss and creating standardized datasets for AI-based
+                    diagnosis and disease prediction.
+                </p>
+                <p class="text-gray-700 leading-relaxed">
+                    This project is supported by Seegene Medical Foundation.
+                </p>
+            </div>
 
-    <!-- Section 5: Multimodal Health Data Analysis -->
-    <div class="space-y-6">
-      <h2 class="text-2xl font-semibold text-gray-900">Multimodal Health Data Analysis and Explainable AI for Complex Disease Prediction</h2>
-      <p class="text-gray-700 leading-relaxed">
-        Early detection of abdominal cancers is critical due to low survival rates. Current research focuses on individual diseases using single-modal data, limiting understanding of disease progression.
-      </p>
-      <p class="text-gray-700 leading-relaxed">
-        This research integrates multimodal data, including health imaging (ultrasound, CT, MR) and PHR (blood tests, lifestyle information), to analyze relationships and progression paths of metabolic and abdominal diseases.
-      </p>
-      <p class="text-gray-700 leading-relaxed">
-        Explainable AI and reinforcement learning optimization are applied to interpret disease risk and progression visually and quantitatively, enabling early intervention and customized AI solutions.
-      </p>
-      <p class="text-gray-700 leading-relaxed">
-        This project is carried out by the consortium of PNU AI Convergence Center, Pusan National University Hospital, and Seegene Medical Foundation.
-      </p>
-    </div>
+            <!-- Section 4: Larynx / Vocal Cord Position Prediction -->
+            <div class="space-y-6">
+                <h2 class="text-2xl font-semibold text-gray-900">Object Detection Algorithm for Vocal Cord Position Prediction</h2>
+                <p class="text-gray-700 leading-relaxed">
+                    The vocal cords are often difficult to see directly due to surrounding structures. This study develops an algorithm to predict vocal cord positions to assist diagnosis even when not visually visible.
+                </p>
+                <p class="text-gray-700 leading-relaxed">
+                    The research is conducted in collaboration with Pusan National University Hospital and Dongguk University Ilsan Hospital.
+                </p>
+            </div>
 
-    <!-- Recent Research Items -->
-    <div class="space-y-6">
-      <h2 class="text-2xl font-semibold text-gray-900">Recent Research</h2>
-      <ul class="list-disc list-inside space-y-2 text-gray-700">
-        <li>Deep learning-based selection of dermoscopy images</li>
-        <li>Dual-energy CT for bone marrow edema detection and analysis</li>
-        <li>CT-based bone density prediction</li>
-        <li>Ureter tracking in non-contrast lumbar CT scans</li>
-      </ul>
-    </div>
+            <!-- Section 5: Multimodal Health Data Analysis -->
+            <div class="space-y-6">
+                <h2 class="text-2xl font-semibold text-gray-900">Multimodal Health Data Analysis and Explainable AI for Complex Disease Prediction</h2>
+                <p class="text-gray-700 leading-relaxed">
+                    Early detection of abdominal cancers is critical due to low survival rates. Current research focuses on individual diseases using single-modal data, limiting understanding of disease progression.
+                </p>
+                <p class="text-gray-700 leading-relaxed">
+                    This research integrates multimodal data, including health imaging (ultrasound, CT, MR) and PHR (blood tests, lifestyle information), to analyze relationships and progression paths of metabolic and abdominal diseases.
+                </p>
+                <p class="text-gray-700 leading-relaxed">
+                    Explainable AI and reinforcement learning optimization are applied to interpret disease risk and progression visually and quantitatively, enabling early intervention and customized AI solutions.
+                </p>
+                <p class="text-gray-700 leading-relaxed">
+                    This project is carried out by the consortium of PNU AI Convergence Center, Pusan National University Hospital, and Seegene Medical Foundation.
+                </p>
+            </div>
 
-  </div>
-</section>
+            <!-- Recent Research Items -->
+            <div class="space-y-6">
+                <h2 class="text-2xl font-semibold text-gray-900">Recent Research</h2>
+                <ul class="list-disc list-inside space-y-2 text-gray-700">
+                    <li>Deep learning-based selection of dermoscopy images</li>
+                    <li>Dual-energy CT for bone marrow edema detection and analysis</li>
+                    <li>CT-based bone density prediction</li>
+                    <li>Ureter tracking in non-contrast lumbar CT scans</li>
+                </ul>
+            </div>
 
-<section class="bg-red-600 py-12">
-  <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between max-w-4xl">
-    
-    <!-- Left: Contact Text -->
-    <div class="text-white mb-4 md:mb-0">
-      <h2 class="text-xl font-bold">Contact</h2>
-      <p class="text-lg font-semibold">AMI Lab</p>
-    </div>
+        </div>
+    </section>
 
-    <!-- Right: Email input and button -->
-    <div class="flex">
-      <input 
-        type="email" 
-        placeholder="Enter your email" 
-        class="px-4 py-2 rounded-l bg-red-500 placeholder-white text-white focus:outline-none focus:ring-2 focus:ring-white"
-      >
-      <button class="px-6 py-2 bg-white text-red-600 font-semibold rounded-r hover:bg-gray-100 transition">
+    <section class="bg-rose-900 py-12">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between max-w-4xl">
+
+            <!-- Left: Contact Text -->
+            <div class="text-white mb-4 md:mb-0">
+                <h2 class="text-xl font-bold">Contact</h2>
+                <p class="text-lg font-semibold">MSPE Lab</p>
+            </div>
+
+            <!-- Right: Email input and button -->
+            <div class="flex">
+                <input type="email" placeholder="Enter your email" class="px-4 py-2 rounded-l bg-rose-700 placeholder-white text-white focus:outline-none focus:ring-2 focus:ring-white">
+                <button class="px-6 py-2 bg-white text-red-600 font-semibold rounded-r hover:bg-gray-100 transition">
         Contact
       </button>
-    </div>
+            </div>
 
-  </div>
-</section>
+        </div>
+    </section>
 
 
 
-    <footer
-            class="footer sm:footer-horizontal bg-neutral text-neutral-content p-10">
-            <nav>
-                <h6 class="footer-title">Services</h6>
-                <a class="link link-hover">Branding</a>
-                <a class="link link-hover">Design</a>
-                <a class="link link-hover">Marketing</a>
-                <a class="link link-hover">Advertisement</a>
-            </nav>
-            <nav>
-                <h6 class="footer-title">Company</h6>
-                <a class="link link-hover">About us</a>
-                <a class="link link-hover">Contact</a>
-                <a class="link link-hover">Jobs</a>
-                <a class="link link-hover">Press kit</a>
-            </nav>
-            <nav>
-                <h6 class="footer-title">Legal</h6>
-                <a class="link link-hover">Terms of use</a>
-                <a class="link link-hover">Privacy policy</a>
-                <a class="link link-hover">Cookie policy</a>
-            </nav>
-        </footer>
+    <footer class="footer sm:footer-horizontal bg-neutral text-neutral-content p-10">
+        <nav>
+            <h6 class="footer-title">Services</h6>
+            <a class="link link-hover">Branding</a>
+            <a class="link link-hover">Design</a>
+            <a class="link link-hover">Marketing</a>
+            <a class="link link-hover">Advertisement</a>
+        </nav>
+        <nav>
+            <h6 class="footer-title">Company</h6>
+            <a class="link link-hover">About us</a>
+            <a class="link link-hover">Contact</a>
+            <a class="link link-hover">Jobs</a>
+            <a class="link link-hover">Press kit</a>
+        </nav>
+        <nav>
+            <h6 class="footer-title">Legal</h6>
+            <a class="link link-hover">Terms of use</a>
+            <a class="link link-hover">Privacy policy</a>
+            <a class="link link-hover">Cookie policy</a>
+        </nav>
+    </footer>
 </body>
+
 </html>

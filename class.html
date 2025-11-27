@@ -1,92 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Navbar Fix</title>
 
-        <!-- ✅ Tailwind + DaisyUI CDN -->
-        <link
-            href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
-            rel="stylesheet" />
-        <script src="https://cdn.tailwindcss.com"></script>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSPE NCAT LAB</title>
 
-    <body>
+    <!-- Tailwind + DaisyUI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
 
-        <nav class="bg-red-500 text-white shadow-sm">
-            <div class="navbar">
+<body>
 
-                <!-- LEFT -->
-                <div class="navbar-start">
-                    <div class="dropdown">
-                        <div tabindex="0" role="button"
-                            class="btn btn-ghost lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg"
-                                class="h-5 w-5" fill="none"
-                                viewBox="0 0 24 24" stroke="currentColor">
+    <nav class="bg-rose-900 text-white shadow-sm">
+        <div class="navbar">
+
+            <!-- LEFT -->
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round"
                                     stroke-linejoin="round" stroke-width="2"
                                     d="M4 6h16M4 12h8m-8 6h16" />
                             </svg>
-                        </div>
-
-                        <!-- MOBILE MENU -->
-                        <ul tabindex="0"
-                            class="menu menu-sm dropdown-content bg-red-500 text-white rounded-box z-10 mt-3 w-52 p-2 shadow">
-                            <li><a href="./index.html">Home</a></li>
-                            <li>
-                                <a>Research</a>
-                                <ul class="p-2 bg-red-500 text-white">
-                                    <li><a href="research.html">AI-based Medical Imaging</a></li>
-                                    <li><a href="./research2.html">Clinical Ultrasound Imaging</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="team.html">Team</a></li>
-                            <li>
-                                <a>Publication</a>
-                                <ul class="bg-red-500 text-white">
-                                    <li><a href="./publication1.html"></a>Journal</a></li>
-                                    <li><a href="./conference.html"></a>Conference</a></li>
-                                    <li><a href="./patent.html"></a>Patent</a></li>
-                                    <li><a href="./domestic.html"></a>Domestic</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="./news.html">News</a></li>
-                            <li><a href="./class.html">Class</a></li>
-                            <li><a href="./photos.html">Photos</a></li>
-                        </ul>
                     </div>
 
-                    <a class="btn btn-ghost text-xl">AMI LAB</a>
-                </div>
-
-                <!-- CENTER (DESKTOP) -->
-                <div class="navbar-center hidden lg:flex">
-                    <ul class="menu menu-horizontal px-1">
+                    <!-- MOBILE MENU -->
+                    <ul tabindex="0" class="menu menu-sm dropdown-content bg-rose-900 text-white rounded-box z-10 mt-3 w-52 p-2 shadow">
                         <li><a href="./index.html">Home</a></li>
-
                         <li>
-                            <details>
-                                <summary>Research</summary>
-                                <ul class="p-2 bg-red-500 text-white rounded-box">
-                                    <li><a href="research.html">AI-based Medical Imaging</a></li>
-                                    <li><a href="./research2.html">Clinical Ultrasound Imaging</a></li>
-                                </ul>
-                            </details>
+                            <a>Research</a>
+                            <ul class="p-2 bg-red-500 text-white">
+                                <li><a href="research.html">AI-based Medical Imaging</a></li>
+                                <li><a href="./research2.html">Clinical Ultrasound Imaging</a></li>
+                            </ul>
                         </li>
-
-                        <li><a href="./team.html">Team</a></li>
+                        <li><a href="team.html">Team</a></li>
                         <li>
-                            <details>
-                                <summary>Publication</summary>
-                                <ul class=" bg-red-500 text-white rounded-box">
-                                    <li><a href="./publication1.html">Journal</a></li>
-                                    <li><a href="./conference.html">Conference</a></li>
-                                    <li><a href="./patent.html">Patent</a></li>
-                                    <li><a href="./domestic.html">Domestic</a></li>
-                                </ul>
-                            </details>
+                            <a>Publication</a>
+                            <ul class="bg-red-500 text-white">
+                                <li>
+                                    <a href="./journal.html"></a>Journal</a>
+                                </li>
+                                <li>
+                                    <a href="./conference.html"></a>Conference</a>
+                                </li>
+                                <li>
+                                    <a href="./patent.html"></a>Patent</a>
+                                </li>
+                                <li>
+                                    <a href="./domestic.html"></a>Domestic</a>
+                                </li>
+                            </ul>
                         </li>
                         <li><a href="./news.html">News</a></li>
                         <li><a href="./class.html">Class</a></li>
@@ -94,163 +61,203 @@
                     </ul>
                 </div>
 
-                <!-- RIGHT -->
-                <div class="navbar-end">
+                <a class="btn btn-ghost text-xl">MSPE LAB</a>
+            </div>
 
-                </div>
+            <!-- CENTER (DESKTOP) -->
+            <div class="navbar-center hidden lg:flex">
+                <ul class="font-medium menu menu-horizontal px-1 ">
+                    <li><a href="./index.html ">Home</a></li>
+
+                    <li>
+                        <details>
+                            <summary>Research</summary>
+                            <ul class="p-2 bg-rose-600 text-white rounded-box ">
+                                <li><a href="researh.html ">Artificial Intelligence</a></li>
+                                <li><a href="./research2.html ">Chemistry and Material Science</a></li>
+                            </ul>
+                        </details>
+                    </li>
+
+                    <li><a href="./team.html ">Team</a></li>
+                    <li>
+                        <details>
+                            <summary>Publication</summary>
+                            <ul class=" bg-rose-600 text-white rounded-box ">
+                                <li><a href="./journal.html ">Journal</a></li>
+                                <li><a href="./conference.html ">Conference</a></li>
+                                <li><a href="./patent.html ">Patent</a></li>
+                                <li><a href="./domestic.html ">Domestic</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li><a href="./news.html ">News</a></li>
+                    <li><a href="./class.html ">Class</a></li>
+                    <li><a href="./photos.html ">Photos</a></li>
+                </ul>
+            </div>
+
+            <!-- RIGHT -->
+            <div class="navbar-end ">
 
             </div>
-        </nav>
+
+        </div>
+    </nav>
 
 
-    <main class="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        
-        <div class="text-center mb-12">
-            <h1 class="text-4xl font-extrabold text-gray-900 sm:text-5xl">Class</h1>
-            <p class="mt-4 max-w-2xl text-xl text-gray-500 mx-auto">Course materials and resources for students.</p>
+    <main class="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-12 ">
+
+        <div class="text-center mb-12 ">
+            <h1 class="text-4xl font-extrabold text-gray-900 sm:text-5xl ">Class</h1>
+            <p class="mt-4 max-w-2xl text-xl text-gray-500 mx-auto ">Course materials and resources for students.</p>
         </div>
 
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 ">
 
             <section>
-                <div class="flex items-center mb-6 border-b-2 border-blue-500 pb-2">
-                    <h2 class="text-2xl font-bold text-gray-900">Undergraduate Class</h2>
+                <div class="flex items-center mb-6 border-b-2 border-blue-500 pb-2 ">
+                    <h2 class="text-2xl font-bold text-gray-900 ">Undergraduate Class</h2>
                 </div>
 
-                <div class="space-y-8">
-                    
-                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition">
-                        <div class="bg-gray-100 px-4 py-3 border-b border-gray-200">
-                            <h3 class="font-semibold text-gray-700">2025 Spring Semester</h3>
+                <div class="space-y-8 ">
+
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition ">
+                        <div class="bg-gray-100 px-4 py-3 border-b border-gray-200 ">
+                            <h3 class="font-semibold text-gray-700 ">2025 Spring Semester</h3>
                         </div>
-                        <ul class="divide-y divide-gray-100">
-                            <li class="px-4 py-3 flex justify-between items-center">
+                        <ul class="divide-y divide-gray-100 ">
+                            <li class="px-4 py-3 flex justify-between items-center ">
                                 <div>
-                                    <p class="text-gray-800 font-medium">Signal and System</p>
-                                    <p class="text-xs text-gray-500">DS3600069</p>
+                                    <p class="text-gray-800 font-medium ">Signal and System</p>
+                                    <p class="text-xs text-gray-500 ">DS3600069</p>
                                 </div>
                             </li>
-                            <li class="px-4 py-3 flex justify-between items-center">
+                            <li class="px-4 py-3 flex justify-between items-center ">
                                 <div>
-                                    <p class="text-gray-800 font-medium">Medical Image Processing</p>
-                                    <p class="text-xs text-gray-500">DS2001134</p>
+                                    <p class="text-gray-800 font-medium ">Medical Image Processing</p>
+                                    <p class="text-xs text-gray-500 ">DS2001134</p>
                                 </div>
                             </li>
-                            <li class="px-4 py-3 flex justify-between items-center">
+                            <li class="px-4 py-3 flex justify-between items-center ">
                                 <div>
-                                    <p class="text-gray-800 font-medium">Artificial Intelligence</p>
-                                    <p class="text-xs text-gray-500">DS3600061</p>
+                                    <p class="text-gray-800 font-medium ">Artificial Intelligence</p>
+                                    <p class="text-xs text-gray-500 ">DS3600061</p>
                                 </div>
                             </li>
                         </ul>
                     </div>
 
-                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition">
-                        <div class="bg-gray-100 px-4 py-3 border-b border-gray-200">
-                            <h3 class="font-semibold text-gray-700">2024 Fall Semester</h3>
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition ">
+                        <div class="bg-gray-100 px-4 py-3 border-b border-gray-200 ">
+                            <h3 class="font-semibold text-gray-700 ">2024 Fall Semester</h3>
                         </div>
-                        <ul class="divide-y divide-gray-100">
-                            <li class="px-4 py-3 flex justify-between items-center">
+                        <ul class="divide-y divide-gray-100 ">
+                            <li class="px-4 py-3 flex justify-between items-center ">
                                 <div>
-                                    <p class="text-gray-800 font-medium">Signal and System</p>
-                                    <p class="text-xs text-gray-500">BX3600069</p>
+                                    <p class="text-gray-800 font-medium ">Signal and System</p>
+                                    <p class="text-xs text-gray-500 ">BX3600069</p>
                                 </div>
-                                <a href="#" class="text-blue-600 hover:text-blue-800 text-sm font-medium flex items-center">
-                                    Download <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                                <a href="# " class="text-blue-600 hover:text-blue-800 text-sm font-medium flex items-center ">
+                                    Download <svg class="w-4 h-4 ml-1 " fill="none " stroke="currentColor " viewBox="0 0 24 24 "><path stroke-linecap="round " stroke-linejoin="round " stroke-width="2 " d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4
+                4m0 0l-4-4m4 4V4 "></path></svg>
                                 </a>
                             </li>
-                            <li class="px-4 py-3 flex justify-between items-center">
+                            <li class="px-4 py-3 flex justify-between items-center ">
                                 <div>
-                                    <p class="text-gray-800 font-medium">Artificial Intelligence</p>
-                                    <p class="text-xs text-gray-500">DS3600061</p>
+                                    <p class="text-gray-800 font-medium ">Artificial Intelligence</p>
+                                    <p class="text-xs text-gray-500 ">DS3600061</p>
                                 </div>
-                                <a href="#" class="text-blue-600 hover:text-blue-800 text-sm font-medium flex items-center">
-                                    Download <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition">
-                        <div class="bg-gray-100 px-4 py-3 border-b border-gray-200">
-                            <h3 class="font-semibold text-gray-700">2024 Spring Semester</h3>
-                        </div>
-                        <ul class="divide-y divide-gray-100">
-                            <li class="px-4 py-3 flex justify-between items-center">
-                                <div>
-                                    <p class="text-gray-800 font-medium">Digital Signal Processing</p>
-                                    <p class="text-xs text-gray-500">BX3600070</p>
-                                </div>
-                            </li>
-                            <li class="px-4 py-3 flex justify-between items-center">
-                                <div>
-                                    <p class="text-gray-800 font-medium">Biomedical Image Processing</p>
-                                    <p class="text-xs text-gray-500">DS2001134</p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition">
-                        <div class="bg-gray-100 px-4 py-3 border-b border-gray-200">
-                            <h3 class="font-semibold text-gray-700">2023 Fall Semester</h3>
-                        </div>
-                        <ul class="divide-y divide-gray-100">
-                            <li class="px-4 py-3 flex justify-between items-center">
-                                <div>
-                                    <p class="text-gray-800 font-medium">Signal and System</p>
-                                    <p class="text-xs text-gray-500">BX3600069-140</p>
-                                </div>
-                                <a href="#" class="text-blue-600 hover:text-blue-800 text-sm font-medium flex items-center">
-                                    Download <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                                <a href="# " class="text-blue-600 hover:text-blue-800 text-sm font-medium flex items-center ">
+                                    Download <svg class="w-4 h-4 ml-1 " fill="none " stroke="currentColor " viewBox="0 0 24 24 "><path stroke-linecap="round " stroke-linejoin="round " stroke-width="2 " d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4
+                4m0 0l-4-4m4 4V4 "></path></svg>
                                 </a>
                             </li>
                         </ul>
                     </div>
 
-                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition">
-                        <div class="bg-gray-100 px-4 py-3 border-b border-gray-200">
-                            <h3 class="font-semibold text-gray-700">2023 Spring Semester</h3>
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition ">
+                        <div class="bg-gray-100 px-4 py-3 border-b border-gray-200 ">
+                            <h3 class="font-semibold text-gray-700 ">2024 Spring Semester</h3>
                         </div>
-                        <ul class="divide-y divide-gray-100">
-                            <li class="px-4 py-3 flex justify-between items-center">
+                        <ul class="divide-y divide-gray-100 ">
+                            <li class="px-4 py-3 flex justify-between items-center ">
                                 <div>
-                                    <p class="text-gray-800 font-medium">Bio-signal Processing</p>
-                                    <p class="text-xs text-gray-500">DS3600070-BX3600070</p>
+                                    <p class="text-gray-800 font-medium ">Digital Signal Processing</p>
+                                    <p class="text-xs text-gray-500 ">BX3600070</p>
                                 </div>
-                                <a href="#" class="text-blue-600 hover:text-blue-800 text-sm font-medium flex items-center">
-                                    Download <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
-                                </a>
                             </li>
-                             <li class="px-4 py-3 flex justify-between items-center">
+                            <li class="px-4 py-3 flex justify-between items-center ">
                                 <div>
-                                    <p class="text-gray-800 font-medium">Medical Image Processing</p>
-                                    <p class="text-xs text-gray-500">DS2001134-BX2001134</p>
+                                    <p class="text-gray-800 font-medium ">Biomedical Image Processing</p>
+                                    <p class="text-xs text-gray-500 ">DS2001134</p>
                                 </div>
                             </li>
                         </ul>
                     </div>
 
-                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition opacity-75">
-                        <div class="bg-gray-100 px-4 py-3 border-b border-gray-200">
-                            <h3 class="font-semibold text-gray-700">Previous Semesters</h3>
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition ">
+                        <div class="bg-gray-100 px-4 py-3 border-b border-gray-200 ">
+                            <h3 class="font-semibold text-gray-700 ">2023 Fall Semester</h3>
                         </div>
-                        <ul class="divide-y divide-gray-100 text-sm">
-                             <li class="px-4 py-2 flex justify-between items-center">
+                        <ul class="divide-y divide-gray-100 ">
+                            <li class="px-4 py-3 flex justify-between items-center ">
+                                <div>
+                                    <p class="text-gray-800 font-medium ">Signal and System</p>
+                                    <p class="text-xs text-gray-500 ">BX3600069-140</p>
+                                </div>
+                                <a href="# " class="text-blue-600 hover:text-blue-800 text-sm font-medium flex items-center ">
+                                    Download <svg class="w-4 h-4 ml-1 " fill="none " stroke="currentColor " viewBox="0 0 24 24 "><path stroke-linecap="round " stroke-linejoin="round " stroke-width="2 " d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4
+                4m0 0l-4-4m4 4V4 "></path></svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition ">
+                        <div class="bg-gray-100 px-4 py-3 border-b border-gray-200 ">
+                            <h3 class="font-semibold text-gray-700 ">2023 Spring Semester</h3>
+                        </div>
+                        <ul class="divide-y divide-gray-100 ">
+                            <li class="px-4 py-3 flex justify-between items-center ">
+                                <div>
+                                    <p class="text-gray-800 font-medium ">Bio-signal Processing</p>
+                                    <p class="text-xs text-gray-500 ">DS3600070-BX3600070</p>
+                                </div>
+                                <a href="# " class="text-blue-600 hover:text-blue-800 text-sm font-medium flex items-center ">
+                                    Download <svg class="w-4 h-4 ml-1 " fill="none " stroke="currentColor " viewBox="0 0 24 24 "><path stroke-linecap="round " stroke-linejoin="round " stroke-width="2 " d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4
+                4m0 0l-4-4m4 4V4 "></path></svg>
+                                </a>
+                            </li>
+                            <li class="px-4 py-3 flex justify-between items-center ">
+                                <div>
+                                    <p class="text-gray-800 font-medium ">Medical Image Processing</p>
+                                    <p class="text-xs text-gray-500 ">DS2001134-BX2001134</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition opacity-75 ">
+                        <div class="bg-gray-100 px-4 py-3 border-b border-gray-200 ">
+                            <h3 class="font-semibold text-gray-700 ">Previous Semesters</h3>
+                        </div>
+                        <ul class="divide-y divide-gray-100 text-sm ">
+                            <li class="px-4 py-2 flex justify-between items-center ">
                                 <span>2022 Fall - Signal and System</span>
-                                <a href="#" class="text-blue-600 hover:underline">Download</a>
+                                <a href="# " class="text-blue-600 hover:underline ">Download</a>
                             </li>
-                            <li class="px-4 py-2 flex justify-between items-center">
+                            <li class="px-4 py-2 flex justify-between items-center ">
                                 <span>2022 Fall - Artificial Intelligence</span>
-                                <a href="#" class="text-blue-600 hover:underline">Download</a>
+                                <a href="# " class="text-blue-600 hover:underline ">Download</a>
                             </li>
-                             <li class="px-4 py-2 flex justify-between items-center">
+                            <li class="px-4 py-2 flex justify-between items-center ">
                                 <span>2022 Spring - Biomedical Engineering Intro.</span>
-                                <a href="#" class="text-blue-600 hover:underline">Download</a>
+                                <a href="# " class="text-blue-600 hover:underline ">Download</a>
                             </li>
-                            <li class="px-4 py-2 flex justify-between items-center">
+                            <li class="px-4 py-2 flex justify-between items-center ">
                                 <span>2021 Fall - Linear Algebra</span>
-                                <a href="#" class="text-blue-600 hover:underline">Download</a>
+                                <a href="# " class="text-blue-600 hover:underline ">Download</a>
                             </li>
                         </ul>
                     </div>
@@ -259,106 +266,110 @@
             </section>
 
             <section>
-                <div class="flex items-center mb-6 border-b-2 border-blue-500 pb-2">
-                    <h2 class="text-2xl font-bold text-gray-900">Graduate Class</h2>
+                <div class="flex items-center mb-6 border-b-2 border-blue-500 pb-2 ">
+                    <h2 class="text-2xl font-bold text-gray-900 ">Graduate Class</h2>
                 </div>
 
-                <div class="space-y-4">
-                    
-                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition">
-                        <div class="bg-gray-50 px-4 py-3 border-b border-gray-200 flex justify-between items-center">
-                            <h3 class="font-semibold text-gray-700">2024 Spring Semester</h3>
+                <div class="space-y-4 ">
+
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition ">
+                        <div class="bg-gray-50 px-4 py-3 border-b border-gray-200 flex justify-between items-center ">
+                            <h3 class="font-semibold text-gray-700 ">2024 Spring Semester</h3>
                         </div>
-                        <div class="px-4 py-3 flex justify-between items-center">
-                             <div>
-                                <p class="text-gray-800 font-medium">Deep Learning Application</p>
-                                <p class="text-xs text-gray-500">AI7500823-300</p>
+                        <div class="px-4 py-3 flex justify-between items-center ">
+                            <div>
+                                <p class="text-gray-800 font-medium ">Deep Learning Application</p>
+                                <p class="text-xs text-gray-500 ">AI7500823-300</p>
                             </div>
-                            <a href="#" class="text-blue-600 hover:text-blue-800 text-sm font-medium flex items-center">
-                                <span class="hidden sm:inline mr-1">Material</span> 
-                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                            <a href="# " class="text-blue-600 hover:text-blue-800 text-sm font-medium flex items-center ">
+                                <span class="hidden sm:inline mr-1 ">Material</span>
+                                <svg class="w-4 h-4 " fill="none " stroke="currentColor " viewBox="0 0 24 24 "><path stroke-linecap="round " stroke-linejoin="round " stroke-width="2 " d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4 "></path></svg>
                             </a>
                         </div>
                     </div>
 
-                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition">
-                        <div class="bg-gray-50 px-4 py-3 border-b border-gray-200">
-                            <h3 class="font-semibold text-gray-700">2023 Fall Semester</h3>
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition ">
+                        <div class="bg-gray-50 px-4 py-3 border-b border-gray-200 ">
+                            <h3 class="font-semibold text-gray-700 ">2023 Fall Semester</h3>
                         </div>
-                        <div class="px-4 py-3 flex justify-between items-center">
-                             <div>
-                                <p class="text-gray-800 font-medium">Deep Learning Application</p>
-                                <p class="text-xs text-gray-500">AI7500823-300</p>
+                        <div class="px-4 py-3 flex justify-between items-center ">
+                            <div>
+                                <p class="text-gray-800 font-medium ">Deep Learning Application</p>
+                                <p class="text-xs text-gray-500 ">AI7500823-300</p>
                             </div>
-                            <a href="#" class="text-blue-600 hover:text-blue-800 text-sm font-medium flex items-center">
-                                <span class="hidden sm:inline mr-1">Material</span>
-                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                            <a href="# " class="text-blue-600 hover:text-blue-800 text-sm font-medium flex items-center ">
+                                <span class="hidden sm:inline mr-1 ">Material</span>
+                                <svg class="w-4 h-4 " fill="none " stroke="currentColor " viewBox="0 0 24 24 "><path stroke-linecap="round " stroke-linejoin="round " stroke-width="2 " d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4 "></path></svg>
                             </a>
                         </div>
                     </div>
 
-                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition">
-                        <div class="bg-gray-50 px-4 py-3 border-b border-gray-200">
-                            <h3 class="font-semibold text-gray-700">2023 Spring Semester</h3>
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition ">
+                        <div class="bg-gray-50 px-4 py-3 border-b border-gray-200 ">
+                            <h3 class="font-semibold text-gray-700 ">2023 Spring Semester</h3>
                         </div>
-                        <div class="px-4 py-3 flex justify-between items-center">
-                             <div>
-                                <p class="text-gray-800 font-medium">Deep Learning Application</p>
-                                <p class="text-xs text-gray-500">AI7500823-001</p>
+                        <div class="px-4 py-3 flex justify-between items-center ">
+                            <div>
+                                <p class="text-gray-800 font-medium ">Deep Learning Application</p>
+                                <p class="text-xs text-gray-500 ">AI7500823-001</p>
                             </div>
-                            <a href="#" class="text-blue-600 hover:text-blue-800 text-sm font-medium flex items-center">
-                                <span class="hidden sm:inline mr-1">Material</span>
-                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                            <a href="# " class="text-blue-600 hover:text-blue-800 text-sm font-medium flex items-center ">
+                                <span class="hidden sm:inline mr-1 ">Material</span>
+                                <svg class="w-4 h-4 " fill="none " stroke="currentColor " viewBox="0 0 24 24 "><path stroke-linecap="round " stroke-linejoin="round " stroke-width="2 " d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4 "></path></svg>
                             </a>
                         </div>
                     </div>
 
-                     <div class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition">
-                        <div class="bg-gray-50 px-4 py-3 border-b border-gray-200">
-                            <h3 class="font-semibold text-gray-700">2022 Fall Semester</h3>
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition ">
+                        <div class="bg-gray-50 px-4 py-3 border-b border-gray-200 ">
+                            <h3 class="font-semibold text-gray-700 ">2022 Fall Semester</h3>
                         </div>
-                        <div class="px-4 py-3 flex justify-between items-center">
-                             <div>
-                                <p class="text-gray-800 font-medium">Deep Learning Application</p>
-                                <p class="text-xs text-gray-500">AI7500823-001</p>
+                        <div class="px-4 py-3 flex justify-between items-center ">
+                            <div>
+                                <p class="text-gray-800 font-medium ">Deep Learning Application</p>
+                                <p class="text-xs text-gray-500 ">AI7500823-001</p>
                             </div>
-                            <a href="#" class="text-blue-600 hover:text-blue-800 text-sm font-medium flex items-center">
-                                <span class="hidden sm:inline mr-1">Material</span>
-                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                            <a href="# " class="text-blue-600 hover:text-blue-800 text-sm font-medium flex items-center ">
+                                <span class="hidden sm:inline mr-1 ">Material</span>
+                                <svg class="w-4 h-4 " fill="none " stroke="currentColor " viewBox="0 0 24 24 "><path stroke-linecap="round " stroke-linejoin="round " stroke-width="2 " d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4 "></path></svg>
                             </a>
                         </div>
                     </div>
 
-                    <div class="mt-6">
-                        <h3 class="text-sm uppercase tracking-wide text-gray-500 font-bold mb-3">Archive</h3>
-                        <ul class="bg-white rounded-lg border border-gray-200 divide-y divide-gray-100">
-                            <li class="px-4 py-3 flex justify-between items-center hover:bg-gray-50">
+                    <div class="mt-6 ">
+                        <h3 class="text-sm uppercase tracking-wide text-gray-500 font-bold mb-3 ">Archive</h3>
+                        <ul class="bg-white rounded-lg border border-gray-200 divide-y divide-gray-100 ">
+                            <li class="px-4 py-3 flex justify-between items-center hover:bg-gray-50 ">
                                 <div>
-                                    <span class="text-xs font-bold text-blue-500 block">2022 Spring</span>
-                                    <span class="text-gray-700 text-sm">Deep Learning Application</span>
+                                    <span class="text-xs font-bold text-blue-500 block ">2022 Spring</span>
+                                    <span class="text-gray-700 text-sm ">Deep Learning Application</span>
                                 </div>
-                                <a href="#" class="text-gray-400 hover:text-blue-600"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg></a>
+                                <a href="# " class="text-gray-400 hover:text-blue-600 "><svg class="w-5 h-5 " fill="none " stroke="currentColor " viewBox="0 0 24 24 "><path stroke-linecap="round " stroke-linejoin="round " stroke-width="2 " d="M4 16v1a3
+                3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4 "></path></svg></a>
                             </li>
-                            <li class="px-4 py-3 flex justify-between items-center hover:bg-gray-50">
+                            <li class="px-4 py-3 flex justify-between items-center hover:bg-gray-50 ">
                                 <div>
-                                    <span class="text-xs font-bold text-blue-500 block">2021 Fall</span>
-                                    <span class="text-gray-700 text-sm">Deep Learning Application</span>
+                                    <span class="text-xs font-bold text-blue-500 block ">2021 Fall</span>
+                                    <span class="text-gray-700 text-sm ">Deep Learning Application</span>
                                 </div>
-                                <a href="#" class="text-gray-400 hover:text-blue-600"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg></a>
+                                <a href="# " class="text-gray-400 hover:text-blue-600 "><svg class="w-5 h-5 " fill="none " stroke="currentColor " viewBox="0 0 24 24 "><path stroke-linecap="round " stroke-linejoin="round " stroke-width="2 " d="M4 16v1a3
+                3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4 "></path></svg></a>
                             </li>
-                             <li class="px-4 py-3 flex justify-between items-center hover:bg-gray-50">
+                            <li class="px-4 py-3 flex justify-between items-center hover:bg-gray-50 ">
                                 <div>
-                                    <span class="text-xs font-bold text-blue-500 block">2021 Spring</span>
-                                    <span class="text-gray-700 text-sm">Deep Learning Application</span>
+                                    <span class="text-xs font-bold text-blue-500 block ">2021 Spring</span>
+                                    <span class="text-gray-700 text-sm ">Deep Learning Application</span>
                                 </div>
-                                <a href="#" class="text-gray-400 hover:text-blue-600"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg></a>
+                                <a href="# " class="text-gray-400 hover:text-blue-600 "><svg class="w-5 h-5 " fill="none " stroke="currentColor " viewBox="0 0 24 24 "><path stroke-linecap="round " stroke-linejoin="round " stroke-width="2 " d="M4 16v1a3
+                3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4 "></path></svg></a>
                             </li>
-                             <li class="px-4 py-3 flex justify-between items-center hover:bg-gray-50">
+                            <li class="px-4 py-3 flex justify-between items-center hover:bg-gray-50 ">
                                 <div>
-                                    <span class="text-xs font-bold text-blue-500 block">2020 Fall</span>
-                                    <span class="text-gray-700 text-sm">Bio-signal Processing</span>
+                                    <span class="text-xs font-bold text-blue-500 block ">2020 Fall</span>
+                                    <span class="text-gray-700 text-sm ">Bio-signal Processing</span>
                                 </div>
-                                <a href="#" class="text-gray-400 hover:text-blue-600"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg></a>
+                                <a href="# " class="text-gray-400 hover:text-blue-600 "><svg class="w-5 h-5 " fill="none " stroke="currentColor " viewBox="0 0 24 24 "><path stroke-linecap="round " stroke-linejoin="round " stroke-width="2 " d="M4 16v1a3
+                3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4 "></path></svg></a>
                             </li>
                         </ul>
                     </div>
@@ -372,54 +383,50 @@
 
 
 
-        <section class="bg-red-600 py-12">
-  <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between max-w-4xl">
-    
-    <!-- Left: Contact Text -->
-    <div class="text-white mb-4 md:mb-0">
-      <h2 class="text-xl font-bold">Contact</h2>
-      <p class="text-lg font-semibold">AMI Lab</p>
-    </div>
+    <section class="bg-rose-900 py-12 ">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between max-w-4xl ">
 
-    <!-- Right: Email input and button -->
-    <div class="flex">
-      <input 
-        type="email" 
-        placeholder="Enter your email" 
-        class="px-4 py-2 rounded-l bg-red-500 placeholder-white text-white focus:outline-none focus:ring-2 focus:ring-white"
-      >
-      <button class="px-6 py-2 bg-white text-red-600 font-semibold rounded-r hover:bg-gray-100 transition">
+            <!-- Left: Contact Text -->
+            <div class="text-white mb-4 md:mb-0 ">
+                <h2 class="text-xl font-bold ">Contact</h2>
+                <p class="text-lg font-semibold ">MSPE Lab</p>
+            </div>
+
+            <!-- Right: Email input and button -->
+            <div class="flex ">
+                <input type="email " placeholder="Enter your email " class="px-4 py-2 rounded-l bg-rose-700 placeholder-white text-white focus:outline-none focus:ring-2 focus:ring-white ">
+                <button class="px-6 py-2 bg-white text-red-600 font-semibold rounded-r hover:bg-gray-100 transition ">
         Contact
       </button>
-    </div>
+            </div>
 
-  </div>
-        </section>
+        </div>
+    </section>
 
 
-        <footer
-            class="footer sm:footer-horizontal bg-neutral text-neutral-content p-10">
-            <nav>
-                <h6 class="footer-title">Services</h6>
-                <a class="link link-hover">Branding</a>
-                <a class="link link-hover">Design</a>
-                <a class="link link-hover">Marketing</a>
-                <a class="link link-hover">Advertisement</a>
-            </nav>
-            <nav>
-                <h6 class="footer-title">Company</h6>
-                <a class="link link-hover">About us</a>
-                <a class="link link-hover">Contact</a>
-                <a class="link link-hover">Jobs</a>
-                <a class="link link-hover">Press kit</a>
-            </nav>
-            <nav>
-                <h6 class="footer-title">Legal</h6>
-                <a class="link link-hover">Terms of use</a>
-                <a class="link link-hover">Privacy policy</a>
-                <a class="link link-hover">Cookie policy</a>
-            </nav>
-        </footer>
+    <footer class="footer sm:footer-horizontal bg-neutral text-neutral-content p-10 ">
+        <nav>
+            <h6 class="footer-title ">Services</h6>
+            <a class="link link-hover ">Branding</a>
+            <a class="link link-hover ">Design</a>
+            <a class="link link-hover ">Marketing</a>
+            <a class="link link-hover ">Advertisement</a>
+        </nav>
+        <nav>
+            <h6 class="footer-title ">Company</h6>
+            <a class="link link-hover ">About us</a>
+            <a class="link link-hover ">Contact</a>
+            <a class="link link-hover ">Jobs</a>
+            <a class="link link-hover ">Press kit</a>
+        </nav>
+        <nav>
+            <h6 class="footer-title ">Legal</h6>
+            <a class="link link-hover ">Terms of use</a>
+            <a class="link link-hover ">Privacy policy</a>
+            <a class="link link-hover ">Cookie policy</a>
+        </nav>
+    </footer>
 
-    </body>
+</body>
+
 </html>
