@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Navbar Fix</title>
+
+        <!-- ✅ Tailwind + DaisyUI CDN -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+            rel="stylesheet" />
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+<body>
+    <nav class="bg-red-500 text-white shadow-sm">
+            <div class="navbar">
+
+                <!-- LEFT -->
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button"
+                            class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="h-5 w-5" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+
+                        <!-- MOBILE MENU -->
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-red-500 text-white rounded-box z-10 mt-3 w-52 p-2 shadow">
+                            <li><a href="./index.html">Home</a></li>
+                            <li>
+                                <a>Research</a>
+                                <ul class="p-2 bg-red-500 text-white">
+                                    <li><a href="research.html">AI-based Medical Imaging</a></li>
+                                    <li><a href="./research2.html">Clinical Ultrasound Imaging</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="team.html">Team</a></li>
+                            <li>
+                                <a>Publication</a>
+                                <ul class="bg-red-500 text-white">
+                                    <li><a href="./publication1.html"></a>Journal</a></li>
+                                    <li><a href="./conference.html"></a>Conference</a></li>
+                                    <li><a href="./patent.html"></a>Patent</a></li>
+                                    <li><a href="./domestic.html"></a>Domestic</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="./news.html">News</a></li>
+                            <li><a href="./class.html">Class</a></li>
+                            <li><a href="./photos.html">Photos</a></li>
+                        </ul>
+                    </div>
+
+                    <a class="btn btn-ghost text-xl">AMI LAB</a>
+                </div>
+
+                <!-- CENTER (DESKTOP) -->
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a href="./index.html">Home</a></li>
+
+                        <li>
+                            <details>
+                                <summary>Research</summary>
+                                <ul class="p-2 bg-red-500 text-white rounded-box">
+                                    <li><a href="research.html">AI-based Medical Imaging</a></li>
+                                    <li><a href="./research2.html">Clinical Ultrasound Imaging</a></li>
+                                </ul>
+                            </details>
+                        </li>
+
+                        <li><a href="./team.html">Team</a></li>
+                        <li>
+                            <details>
+                                <summary>Publication</summary>
+                                <ul class=" bg-red-500 text-white rounded-box">
+                                    <li><a href="./publication1.html">Journal</a></li>
+                                    <li><a href="./conference.html">Conference</a></li>
+                                    <li><a href="./patent.html">Patent</a></li>
+                                    <li><a href="./domestic.html">Domestic</a></li>
+                                </ul>
+                            </details>
+                        </li>
+                        <li><a href="./news.html">News</a></li>
+                        <li><a href="./class.html">Class</a></li>
+                        <li><a href="./photos.html">Photos</a></li>
+                    </ul>
+                </div>
+
+                <!-- RIGHT -->
+                <div class="navbar-end">
+
+                </div>
+
+            </div>
+        </nav>
+
+    <section class="bg-white py-16 px-6 md:px-12 lg:px-24">
+  <div class="max-w-5xl mx-auto space-y-12">
+
+    <!-- Professors / PI Section -->
+    <div>
+      <h2 class="text-4xl text-center font-semibold text-gray-900 mb-6">Professors & Principal Investigator</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+
+        <!-- PI / Professor Card Example -->
+        <div class="flex flex-col items-center">
+          <img src="./sehoon.jpg" alt="Prof. MinWoo Kim" class="w-32 h-32 rounded-full object-cover mb-4 shadow-md">
+          <h3 class="text-xl font-semibold text-gray-900">Prof. MinWoo Kim</h3>
+          <p class="text-gray-500 mt-1">Principal Investigator</p>
+          <p class="text-gray-500 mt-1">Email: <a href="mailto:minwoo.kim@pusan.ac.kr" class="text-blue-600 hover:underline">minwoo.kim@pusan.ac.kr</a></p>
+        </div>
+
+        <div class="flex flex-col items-center">
+          <img src="./sehoon.jpg" alt="Prof. JiHyun Lee" class="w-32 h-32 rounded-full object-cover mb-4 shadow-md">
+          <h3 class="text-xl font-semibold text-gray-900">Prof. JiHyun Lee</h3>
+          <p class="text-gray-500 mt-1">Co-Investigator / Professor</p>
+          <p class="text-gray-500 mt-1">Email: <a href="mailto:jihyun.lee@pusan.ac.kr" class="text-blue-600 hover:underline">jihyun.lee@pusan.ac.kr</a></p>
+        </div>
+
+        <!-- Add more professors as needed -->
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="bg-white py-16 px-6 md:px-12 lg:px-24">
+  <div class="max-w-5xl mx-auto">
+
+    <!-- Page Heading -->
+    <div class="text-center mb-12">
+      <h1 class="text-4xl font-bold text-gray-900">Our Team</h1>
+      <p class="text-gray-600 mt-4">Graduate Students and Lab Members of AMI Lab</p>
+    </div>
+
+    <!-- Team Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+
+      <!-- Member Card Example -->
+      <div class="flex flex-col items-center">
+        <img src="./sehoon.jpg" alt="Sehoon Kim" class="w-32 h-32 rounded-full object-cover mb-4 shadow-md">
+        <h3 class="text-xl font-semibold text-gray-900">Sehoon Kim</h3>
+        <p class="text-gray-500 mt-1">Graduate Student</p>
+      </div>
+
+      <div class="flex flex-col items-center">
+        <img src="./sehoon.jpg" alt="DongEon Lee" class="w-32 h-32 rounded-full object-cover mb-4 shadow-md">
+        <h3 class="text-xl font-semibold text-gray-900">DongEon Lee</h3>
+        <p class="text-gray-500 mt-1">Graduate Student</p>
+      </div>
+
+      <div class="flex flex-col items-center">
+        <img src="./sehoon.jpg" alt="DongEon Lee" class="w-32 h-32 rounded-full object-cover mb-4 shadow-md">
+        <h3 class="text-xl font-semibold text-gray-900">DongEon Lee</h3>
+        <p class="text-gray-500 mt-1">Graduate Student</p>
+      </div>
+
+      <div class="flex flex-col items-center">
+        <img src="./sehoon.jpg" alt="DongEon Lee" class="w-32 h-32 rounded-full object-cover mb-4 shadow-md">
+        <h3 class="text-xl font-semibold text-gray-900">DongEon Lee</h3>
+        <p class="text-gray-500 mt-1">Graduate Student</p>
+      </div>
+
+      <div class="flex flex-col items-center">
+        <img src="./sehoon.jpg" alt="SiYeoul Lee" class="w-32 h-32 rounded-full object-cover mb-4 shadow-md">
+        <h3 class="text-xl font-semibold text-gray-900">SiYeoul Lee</h3>
+        <p class="text-gray-500 mt-1">Graduate Student</p>
+      </div>
+
+      <div class="flex flex-col items-center">
+        <img src="./sehoon.jpg" alt="Imrus Salehin" class="w-32 h-32 rounded-full object-cover mb-4 shadow-md">
+        <h3 class="text-xl font-semibold text-gray-900">Imrus Salehin</h3>
+        <p class="text-gray-500 mt-1">Graduate Student</p>
+      </div>
+
+      <div class="flex flex-col items-center">
+        <img src="./sehoon.jpg" alt="Yubin Cho" class="w-32 h-32 rounded-full object-cover mb-4 shadow-md">
+        <h3 class="text-xl font-semibold text-gray-900">Yubin Cho</h3>
+        <p class="text-gray-500 mt-1">Graduate Student</p>
+      </div>
+
+      <div class="flex flex-col items-center">
+        <img src="./sehoon.jpg" alt="MinKyung Seo" class="w-32 h-32 rounded-full object-cover mb-4 shadow-md">
+        <h3 class="text-xl font-semibold text-gray-900">MinKyung Seo</h3>
+        <p class="text-gray-500 mt-1">Graduate Student</p>
+      </div>
+
+      <div class="flex flex-col items-center">
+        <img src="./sehoon.jpg" alt="EonSeung Sung" class="w-32 h-32 rounded-full object-cover mb-4 shadow-md">
+        <h3 class="text-xl font-semibold text-gray-900">EonSeung Sung</h3>
+        <p class="text-gray-500 mt-1">Graduate Student</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="bg-white py-16 px-6 md:px-12 lg:px-24">
+  <div class="max-w-5xl mx-auto space-y-12">
+
+    <!-- Researcher & Post-Doc Section -->
+    <div>
+      <h2 class="text-2xl font-semibold text-gray-900 mb-6">Researchers & Post‑Docs</h2>
+      <div class="space-y-8">
+        <div class="flex items-center space-x-6">
+          <img src="./sehoon.jpg" alt="Hyemin Yoon" class="w-24 h-24 rounded-full object-cover shadow-md">
+          <div>
+            <h3 class="text-xl font-semibold text-gray-900">Hyemin Yoon</h3>
+            <p class="text-gray-600">Post‑doctoral Researcher</p>
+            <p class="text-gray-500 mt-1">yoonhm3710@gmail.com</p>
+          </div>
+        </div>
+        <!-- Add more post-docs / researchers here if available -->
+      </div>
+    </div>
+
+    <!-- Undergraduate Research Students Section -->
+    <div>
+      <h2 class="text-2xl font-semibold text-gray-900 mb-6">Undergraduate Research Students</h2>
+      <div class="space-y-4">
+        <!-- Note: On the source page, there are no names listed under “Undergraduate Research Students” -->
+        <p class="text-gray-700">Currently, there are no listed undergraduate research students.</p>
+      </div>
+    </div>
+
+    <!-- Alumni Section -->
+    <div>
+      <h2 class="text-2xl font-semibold text-gray-900 mb-6">Alumni</h2>
+      <div class="space-y-8 grid grid-cols-3">
+        <div class="space-y-2">
+          <h3 class="text-lg font-medium text-gray-900">Chunsu Park</h3>
+          <p class="text-gray-600">Mar 2021 – Aug 2025 · Master’s / Researcher</p>
+          <p class="text-gray-500">cspark5484@pusan.ac.kr</p>
+          <p class="text-gray-500">Currently: Ph.D. student at University of Illinois at Urbana‑Champaign (UIUC)</p>
+        </div>
+        <div class="space-y-2">
+          <h3 class="text-lg font-medium text-gray-900">JeongUn Kang</h3>
+          <p class="text-gray-600">Mar 2021 – Feb 2023 · Master’s</p>
+          <p class="text-gray-500">dnsdudwk1027@naver.com</p>
+          <p class="text-gray-500">Currently: Working at Interex Inc.</p>
+        </div>
+        <div class="space-y-2">
+          <h3 class="text-lg font-medium text-gray-900">Ashok Kambaluru</h3>
+          <p class="text-gray-600">Sep 2022 – Aug 2024 · Master’s</p>
+          <p class="text-gray-500">ashok@pusan.ac.kr</p>
+          <p class="text-gray-500">Currently: Assistant Professor, Madanapalle Institute of Technology and Science (MITS)</p>
+        </div>
+        <div class="space-y-2">
+          <h3 class="text-lg font-medium text-gray-900">SeonYeong Lee</h3>
+          <p class="text-gray-600">Sep 2022 – Feb 2025 · Master’s</p>
+          <p class="text-gray-500">jasleen37@pusan.ac.kr</p>
+        </div>
+        <div class="space-y-2">
+          <h3 class="text-lg font-medium text-gray-900">Jiye Kim</h3>
+          <p class="text-gray-600">Mar 2023 – Aug 2025 · Master’s / Researcher</p>
+          <p class="text-gray-500">jiji5000@pusan.ac.kr</p>
+        </div>
+        <div class="space-y-2">
+          <h3 class="text-lg font-medium text-gray-900">AJeong Kim</h3>
+          <p class="text-gray-600">Mar 2024 – Jun 2025 · Bachelor’s</p>
+          <p class="text-gray-500">jeonk636@pusan.ac.kr</p>
+          <p class="text-gray-500">Currently: Master’s student at Pusan National University</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="bg-red-600 py-12">
+  <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between max-w-4xl">
+    
+    <!-- Left: Contact Text -->
+    <div class="text-white mb-4 md:mb-0">
+      <h2 class="text-xl font-bold">Contact</h2>
+      <p class="text-lg font-semibold">AMI Lab</p>
+    </div>
+
+    <!-- Right: Email input and button -->
+    <div class="flex">
+      <input 
+        type="email" 
+        placeholder="Enter your email" 
+        class="px-4 py-2 rounded-l bg-red-500 placeholder-white text-white focus:outline-none focus:ring-2 focus:ring-white"
+      >
+      <button class="px-6 py-2 bg-white text-red-600 font-semibold rounded-r hover:bg-gray-100 transition">
+        Contact
+      </button>
+    </div>
+
+  </div>
+</section>
+
+
+<footer
+            class="footer sm:footer-horizontal bg-neutral text-neutral-content p-10">
+            <nav>
+                <h6 class="footer-title">Services</h6>
+                <a class="link link-hover">Branding</a>
+                <a class="link link-hover">Design</a>
+                <a class="link link-hover">Marketing</a>
+                <a class="link link-hover">Advertisement</a>
+            </nav>
+            <nav>
+                <h6 class="footer-title">Company</h6>
+                <a class="link link-hover">About us</a>
+                <a class="link link-hover">Contact</a>
+                <a class="link link-hover">Jobs</a>
+                <a class="link link-hover">Press kit</a>
+            </nav>
+            <nav>
+                <h6 class="footer-title">Legal</h6>
+                <a class="link link-hover">Terms of use</a>
+                <a class="link link-hover">Privacy policy</a>
+                <a class="link link-hover">Cookie policy</a>
+            </nav>
+        </footer>
+
+</body>
+</html>

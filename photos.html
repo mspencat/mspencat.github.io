@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Navbar Fix</title>
+
+        <!-- ✅ Tailwind + DaisyUI CDN -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+            rel="stylesheet" />
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+
+    <body>
+
+        <nav class="bg-red-500 text-white shadow-sm">
+            <div class="navbar">
+
+                <!-- LEFT -->
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button"
+                            class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="h-5 w-5" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+
+                        <!-- MOBILE MENU -->
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-red-500 text-white rounded-box z-10 mt-3 w-52 p-2 shadow">
+                            <li><a href="./index.html">Home</a></li>
+                            <li>
+                                <a>Research</a>
+                                <ul class="p-2 bg-red-500 text-white">
+                                    <li><a href="research.html">AI-based Medical Imaging</a></li>
+                                    <li><a href="./research2.html">Clinical Ultrasound Imaging</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="team.html">Team</a></li>
+                            <li>
+                                <a>Publication</a>
+                                <ul class="bg-red-500 text-white">
+                                    <li><a href="./publication1.html"></a>Journal</a></li>
+                                    <li><a href="./conference.html"></a>Conference</a></li>
+                                    <li><a href="./patent.html"></a>Patent</a></li>
+                                    <li><a href="./domestic.html"></a>Domestic</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="./news.html">News</a></li>
+                            <li><a href="./class.html">Class</a></li>
+                            <li><a href="./photos.html">Photos</a></li>
+                        </ul>
+                    </div>
+
+                    <a class="btn btn-ghost text-xl">AMI LAB</a>
+                </div>
+
+                <!-- CENTER (DESKTOP) -->
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a href="./index.html">Home</a></li>
+
+                        <li>
+                            <details>
+                                <summary>Research</summary>
+                                <ul class="p-2 bg-red-500 text-white rounded-box">
+                                    <li><a href="research.html">AI-based Medical Imaging</a></li>
+                                    <li><a href="./research2.html">Clinical Ultrasound Imaging</a></li>
+                                </ul>
+                            </details>
+                        </li>
+
+                        <li><a href="./team.html">Team</a></li>
+                        <li>
+                            <details>
+                                <summary>Publication</summary>
+                                <ul class=" bg-red-500 text-white rounded-box">
+                                    <li><a href="./publication1.html">Journal</a></li>
+                                    <li><a href="./conference.html">Conference</a></li>
+                                    <li><a href="./patent.html">Patent</a></li>
+                                    <li><a href="./domestic.html">Domestic</a></li>
+                                </ul>
+                            </details>
+                        </li>
+                        <li><a href="./news.html">News</a></li>
+                        <li><a href="./class.html">Class</a></li>
+                        <li><a href="./photos.html">Photos</a></li>
+                    </ul>
+                </div>
+
+                <!-- RIGHT -->
+                <div class="navbar-end">
+
+                </div>
+
+            </div>
+        </nav>
+
+        <section class="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        
+        <div class="text-center mb-12">
+            <h1 class="text-4xl font-extrabold text-gray-900 sm:text-5xl">Gallery</h1>
+            <p class="mt-4 max-w-2xl text-xl text-gray-500 mx-auto">AMI LAB Memories — Capturing our best moments.</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 group">
+                <div class="relative h-64 overflow-hidden">
+                    <img src="sehoon.jpg" alt="MICCAI 2025 in Daejeon" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+                <div class="p-6">
+                    <div class="text-sm text-blue-600 font-bold mb-2">September 2025</div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">MICCAI 2025 in Daejeon, Korea 🇰🇷</h3>
+                    <p class="text-gray-600 text-sm line-clamp-2">Participating in the International Conference on Medical Image Computing and Computer Assisted Intervention.</p>
+                </div>
+            </article>
+
+            <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 group">
+                <div class="relative h-64 overflow-hidden">
+                    <img src="sehoon.jpg" alt="IEEE IUS 2025" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+                <div class="p-6">
+                    <div class="text-sm text-blue-600 font-bold mb-2">September 2025</div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">IEEE IUS 2025 in Utrecht, Netherlands 🇳🇱</h3>
+                    <p class="text-gray-600 text-sm line-clamp-2">International Ultrasonics Symposium attendance.</p>
+                </div>
+            </article>
+
+            <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 group">
+                <div class="relative h-64 overflow-hidden">
+                    <img src="sehoon.jpg" alt="Professor's Birthday" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+                <div class="p-6">
+                    <div class="text-sm text-blue-600 font-bold mb-2">August 2025</div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Professor's Birthday Celebration 🎉🥳</h3>
+                    <p class="text-gray-600 text-sm line-clamp-2">Happy Birthday to our Professor! Celebrating together in the lab.</p>
+                </div>
+            </article>
+
+            <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 group">
+                <div class="relative h-64 overflow-hidden">
+                    <img src="sehoon.jpg" alt="Teachers' Day 2025" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+                <div class="p-6">
+                    <div class="text-sm text-blue-600 font-bold mb-2">May 2025</div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">2025 Teachers' Day Event 💐</h3>
+                    <p class="text-gray-600 text-sm line-clamp-2">Expressing our gratitude to the Professor. Thank you always! 🙏🏻</p>
+                </div>
+            </article>
+
+            <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 group">
+                <div class="relative h-64 overflow-hidden">
+                    <img src="sehoon.jpg" alt="KOSOMBE Spring 2025" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+                <div class="p-6">
+                    <div class="text-sm text-blue-600 font-bold mb-2">May 2025</div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">2025 KOSOMBE Spring Conference 🔥</h3>
+                    <p class="text-gray-600 text-sm line-clamp-2">Korean Society of Medical & Biological Engineering. Winners of Best Paper & Best Poster Awards!</p>
+                </div>
+            </article>
+
+            <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 group">
+                <div class="relative h-64 overflow-hidden">
+                    <img src="sehoon.jpg" alt="Jeju Trip" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+                <div class="p-6">
+                    <div class="text-sm text-blue-600 font-bold mb-2">May 2025</div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">KOSOMBE Conference in Jeju 😎</h3>
+                    <p class="text-gray-600 text-sm line-clamp-2">Enjoying the conference and tour in Jeju Island. #Jeju #Memories</p>
+                </div>
+            </article>
+
+            <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 group">
+                <div class="relative h-64 overflow-hidden">
+                    <img src="sehoon.jpg" alt="Master's Graduation" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+                <div class="p-6">
+                    <div class="text-sm text-blue-600 font-bold mb-2">February 2025</div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">SeonYoung & JiYe's Graduation 🎓</h3>
+                    <p class="text-gray-600 text-sm line-clamp-2">Congratulations on your Master's degree graduation!</p>
+                </div>
+            </article>
+
+            <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 group">
+                <div class="relative h-64 overflow-hidden">
+                    <img src="sehoon.jpg" alt="MICCAI 2024 Morocco" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+                <div class="p-6">
+                    <div class="text-sm text-blue-600 font-bold mb-2">October 2024</div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">MICCAI in Marrakesh, Morocco 🇲🇦</h3>
+                    <p class="text-gray-600 text-sm line-clamp-2">Attending MICCAI 2024 in the beautiful city of Marrakesh.</p>
+                </div>
+            </article>
+
+            <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 group">
+                <div class="relative h-64 overflow-hidden">
+                    <img src="sehoon.jpg" alt="IEEE IUS 2024 Taiwan" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+                <div class="p-6">
+                    <div class="text-sm text-blue-600 font-bold mb-2">October 2024</div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">IEEE IUS in Taipei, Taiwan 🇹🇼</h3>
+                    <p class="text-gray-600 text-sm line-clamp-2">Presenting research at the IEEE International Ultrasonics Symposium.</p>
+                </div>
+            </article>
+
+        </div>
+
+        <div class="flex justify-center mt-16">
+            <button class="px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:py-4 md:text-lg transition shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                Load More Photos
+            </button>
+        </div>
+
+    </section>
+
+    <section class="bg-red-600 py-12">
+  <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between max-w-4xl">
+    
+    <!-- Left: Contact Text -->
+    <div class="text-white mb-4 md:mb-0">
+      <h2 class="text-xl font-bold">Contact</h2>
+      <p class="text-lg font-semibold">AMI Lab</p>
+    </div>
+
+    <!-- Right: Email input and button -->
+    <div class="flex">
+      <input 
+        type="email" 
+        placeholder="Enter your email" 
+        class="px-4 py-2 rounded-l bg-red-500 placeholder-white text-white focus:outline-none focus:ring-2 focus:ring-white"
+      >
+      <button class="px-6 py-2 bg-white text-red-600 font-semibold rounded-r hover:bg-gray-100 transition">
+        Contact
+      </button>
+    </div>
+
+  </div>
+        </section>
+
+        <footer
+            class="footer sm:footer-horizontal bg-neutral text-neutral-content p-10">
+            <nav>
+                <h6 class="footer-title">Services</h6>
+                <a class="link link-hover">Branding</a>
+                <a class="link link-hover">Design</a>
+                <a class="link link-hover">Marketing</a>
+                <a class="link link-hover">Advertisement</a>
+            </nav>
+            <nav>
+                <h6 class="footer-title">Company</h6>
+                <a class="link link-hover">About us</a>
+                <a class="link link-hover">Contact</a>
+                <a class="link link-hover">Jobs</a>
+                <a class="link link-hover">Press kit</a>
+            </nav>
+            <nav>
+                <h6 class="footer-title">Legal</h6>
+                <a class="link link-hover">Terms of use</a>
+                <a class="link link-hover">Privacy policy</a>
+                <a class="link link-hover">Cookie policy</a>
+            </nav>
+        </footer>
+
+    </body>
+</html>
