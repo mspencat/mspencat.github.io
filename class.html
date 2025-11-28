@@ -14,7 +14,7 @@
 <body>
 
     <nav class="bg-rose-900 text-white shadow-sm">
-        <div class="max-w-7xl mx-auto px-4">
+        <div class="max-w-7xl mx-auto px-0">
 
             <!-- MOBILE NAV -->
             <div class="lg:hidden py-2">
@@ -68,17 +68,16 @@
             </div>
 
             <!-- DESKTOP NAV -->
-            <div class="navbar hidden lg:flex px-0">
-                <!-- LEFT -->
+            <div class="navbar hidden lg:flex w-full p-0">
                 <div class="navbar-start">
-                    <a href="./index.html" class="btn btn-ghost text-xl font-semibold">MSPE LAB</a>
+                    <a href="./index.html" class="btn btn-ghost text-xl font-semibold pl-0">MSPE LAB</a>
                 </div>
-
-                <!-- CENTER -->
-                <div class="navbar-center">
-                    <ul class="menu menu-horizontal px-1 font-medium">
-                        <li><a href="./index.html">Home</a></li>
-
+                <!--CENTER-->
+                <div class="navbar-center flex justify-end w-full mr-6">
+                    <ul class="menu menu-horizontal px-1 font-medium mr-8">
+                        <li>
+                            <a href="./index.html">Home</a>
+                        </li>
                         <li>
                             <details>
                                 <summary>Research</summary>
@@ -107,10 +106,10 @@
                         <li><a href="./class.html">Class</a></li>
                         <li><a href="./photos.html">Photos</a></li>
                     </ul>
+                    <img src="ncat_logo.png" alt="NCAT Logo" class="w-72 h-12 ml-4 mr-4">
+
                 </div>
-
             </div>
-
         </div>
     </nav>
 
@@ -393,8 +392,7 @@
 
             <!-- Left: Logo + Contact Info -->
             <div class="flex items-center gap-4">
-                <img src="ncat_logo.png" alt="NCAT Logo" class="w-36 h-auto">
-
+                <img src="ncat_logo.png" alt="NCAT Logo" class="w-72 h-12">
                 <div class="text-white">
                     <h2 class="text-xl font-bold">Contact</h2>
                     <p class="text-base font-normal">MSPE Lab</p>
@@ -412,26 +410,11 @@
         </div>
     </section>
 
-    <footer class="footer sm:footer-horizontal bg-neutral text-neutral-content p-10 ">
-        <nav>
-            <h6 class="footer-title ">Services</h6>
-            <a class="link link-hover ">Branding</a>
-            <a class="link link-hover ">Design</a>
-            <a class="link link-hover ">Marketing</a>
-            <a class="link link-hover ">Advertisement</a>
-        </nav>
-        <nav>
-            <h6 class="footer-title ">Company</h6>
-            <a class="link link-hover ">About us</a>
-            <a class="link link-hover ">Contact</a>
-            <a class="link link-hover ">Jobs</a>
-            <a class="link link-hover ">Press kit</a>
-        </nav>
-        <nav>
-            <h6 class="footer-title ">Legal</h6>
-            <a class="link link-hover ">Terms of use</a>
-            <a class="link link-hover ">Privacy policy</a>
-            <a class="link link-hover ">Cookie policy</a>
+    <footer class="footer sm:footer-horizontal bg-neutral text-neutral-content p-2">
+        <nav class="w-full justify-center text-center flex">
+            <h6 class="font-sans">
+                Copyright 2025. All rights reserved by MSPE LAB of North Carolina A&T State University
+            </h6>
         </nav>
     </footer>
 
