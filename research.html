@@ -12,93 +12,101 @@
 </head>
 
 <body>
-
     <nav class="bg-rose-900 text-white shadow-sm">
-        <div class="navbar">
+        <div class="max-w-7xl mx-auto px-4">
 
-            <!-- LEFT -->
-            <div class="navbar-start">
-                <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round"
-                                    stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h8m-8 6h16" />
+            <!-- MOBILE NAV -->
+            <div class="lg:hidden py-2">
+                <details class="w-full">
+                    <!-- Top bar: hamburger + title -->
+                    <summary class="flex items-center gap-3 cursor-pointer list-none">
+                        <span class="btn btn-ghost btn-square min-h-0 h-9 w-9">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                             </svg>
-                    </div>
+                        </span>
+                        <span class="font-semibold text-lg">MSPE LAB</span>
+                    </summary>
 
-                    <!-- MOBILE MENU -->
-                    <ul tabindex="0" class="menu menu-sm dropdown-content bg-rose-900 text-white rounded-box z-10 mt-3 w-52 p-2 shadow">
+                    <!-- Mobile menu items -->
+                    <ul class="mt-3 menu bg-rose-900 text-white w-full p-4 space-y-2">
+
                         <li><a href="./index.html">Home</a></li>
+
+                        <!-- Research -->
                         <li>
-                            <a>Research</a>
-                            <ul class="p-2 bg-rose-600 text-white">
-                                <li><a href="research.html">AI-based Medical Imaging</a></li>
-                                <li><a href="./research2.html">Clinical Ultrasound Imaging</a></li>
-                            </ul>
+                            <details>
+                                <summary>Research</summary>
+                                <ul class="mt-2 bg-rose-800 rounded-lg p-3 space-y-1 text-sm">
+                                    <li><a href="research.html" class="block px-2 py-1 rounded-lg hover:bg-rose-700">Artificial Intelligence</a></li>
+                                    <li><a href="./research2.html" class="block px-2 py-1 rounded-lg hover:bg-rose-700">Chemistry and Material Science</a></li>
+                                </ul>
+                            </details>
                         </li>
+
                         <li><a href="team.html">Team</a></li>
+
+                        <!-- Publication -->
                         <li>
-                            <a>Publication</a>
-                            <ul class="bg-rose-600 text-white">
-                                <li>
-                                    <a href="./journal.html"></a>Journal</a>
-                                </li>
-                                <li>
-                                    <a href="./conference.html"></a>Conference</a>
-                                </li>
-                                <li>
-                                    <a href="./patent.html"></a>Patent</a>
-                                </li>
-                                <li>
-                                    <a href="./domestic.html"></a>Domestic</a>
-                                </li>
-                            </ul>
+                            <details>
+                                <summary>Publication</summary>
+                                <ul class="mt-2 bg-rose-800 rounded-lg p-3 space-y-1 text-sm">
+                                    <li><a href="./journal.html" class="block px-2 py-1 rounded-lg hover:bg-rose-700">Journal</a></li>
+                                    <li><a href="./conference.html" class="block px-2 py-1 rounded-lg hover:bg-rose-700">Conference</a></li>
+                                    <li><a href="./patent.html" class="block px-2 py-1 rounded-lg hover:bg-rose-700">Patent</a></li>
+                                    <li><a href="./domestic.html" class="block px-2 py-1 rounded-lg hover:bg-rose-700">Domestic</a></li>
+                                </ul>
+                            </details>
                         </li>
+
+                        <li><a href="./news.html">News</a></li>
+                        <li><a href="./class.html">Class</a></li>
+                        <li><a href="./photos.html">Photos</a></li>
+                    </ul>
+                </details>
+            </div>
+
+            <!-- DESKTOP NAV -->
+            <div class="navbar hidden lg:flex px-0">
+                <!-- LEFT -->
+                <div class="navbar-start">
+                    <a href="./index.html" class="btn btn-ghost text-xl font-semibold">MSPE LAB</a>
+                </div>
+
+                <!-- CENTER -->
+                <div class="navbar-center">
+                    <ul class="menu menu-horizontal px-1 font-medium">
+                        <li><a href="./index.html">Home</a></li>
+
+                        <li>
+                            <details>
+                                <summary>Research</summary>
+                                <ul class="p-2 bg-rose-600 text-white rounded-box">
+                                    <li><a href="research.html">Artificial Intelligence</a></li>
+                                    <li><a href="./research2.html">Chemistry and Material Science</a></li>
+                                </ul>
+                            </details>
+                        </li>
+
+                        <li><a href="./team.html">Team</a></li>
+
+                        <li>
+                            <details>
+                                <summary>Publication</summary>
+                                <ul class="p-2 bg-rose-600 text-white rounded-box">
+                                    <li><a href="./journal.html">Journal</a></li>
+                                    <li><a href="./conference.html">Conference</a></li>
+                                    <li><a href="./patent.html">Patent</a></li>
+                                    <li><a href="./domestic.html">Domestic</a></li>
+                                </ul>
+                            </details>
+                        </li>
+
                         <li><a href="./news.html">News</a></li>
                         <li><a href="./class.html">Class</a></li>
                         <li><a href="./photos.html">Photos</a></li>
                     </ul>
                 </div>
-
-                <a class="btn btn-ghost text-xl">MSPE LAB</a>
-            </div>
-
-            <!-- CENTER (DESKTOP) -->
-            <div class="navbar-center hidden lg:flex">
-                <ul class="font-medium menu menu-horizontal px-1">
-                    <li><a href="./index.html">Home</a></li>
-
-                    <li>
-                        <details>
-                            <summary>Research</summary>
-                            <ul class="p-2 bg-rose-600 text-white rounded-box">
-                                <li><a href="research.html">Artificial Intelligence</a></li>
-                                <li><a href="./research2.html">Chemistry and Material Science</a></li>
-                            </ul>
-                        </details>
-                    </li>
-
-                    <li><a href="./team.html">Team</a></li>
-                    <li>
-                        <details>
-                            <summary>Publication</summary>
-                            <ul class=" bg-rose-600 text-white rounded-box">
-                                <li><a href="./journal.html">Journal</a></li>
-                                <li><a href="./conference.html">Conference</a></li>
-                                <li><a href="./patent.html">Patent</a></li>
-                                <li><a href="./domestic.html">Domestic</a></li>
-                            </ul>
-                        </details>
-                    </li>
-                    <li><a href="./news.html">News</a></li>
-                    <li><a href="./class.html">Class</a></li>
-                    <li><a href="./photos.html">Photos</a></li>
-                </ul>
-            </div>
-
-            <!-- RIGHT -->
-            <div class="navbar-end">
 
             </div>
 
